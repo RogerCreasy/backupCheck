@@ -1,0 +1,7 @@
+# vim
+.sw[po]
+*.sw[po]
+phpcs.xml
+
+# testing Files
+serverFiles/*.json

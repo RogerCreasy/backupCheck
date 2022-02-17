@@ -1,0 +1,16 @@
+# Service for monitoring backup files
+# and alerting is required
+# By Roger Creasy roger@rogercreasy.com
+# Note: installation directory line 12
+#
+
+[Unit]
+Description=Checks files listed in config, alerts if needed
+Wants=backupStatusCheck.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/backupStatusCheck
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+[{
+    "server": "server1",
+    "path": "/path/to/file/with/globbing/www*.vbk"
+}, {
+    "server": "server2",
+    "path": "/path/to/file"
+}]

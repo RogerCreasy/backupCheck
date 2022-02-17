@@ -1,0 +1,16 @@
+# Timer for backupStatusCheck
+# Created: 01.11.2022
+# Roger Creasy - roger@rogercreasy.com
+# Set the frequency on line 12 below
+#
+
+[Unit]
+Description=Check status of backup files
+Requires=backupStatusCheck.service
+
+[Timer]
+Unit=backupStatusCheck.service
+OnCalendar=*-*-* 09:15:30
+
+[Install]
+WantedBy=timers.target
